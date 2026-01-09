@@ -1,4 +1,4 @@
-import React, { Suspense, lazy } from 'react';
+import { Suspense, lazy } from 'react';
 import { Button } from '@/components/ui/button';
 import { FloatingIcons } from '@/components/FloatingIcons';
 import { TypingEffect } from '@/components/TypingEffect';
@@ -8,7 +8,7 @@ const InteractiveGlobe = lazy(() =>
   import('@/components/InteractiveGlobe').then(mod => ({ default: mod.InteractiveGlobe }))
 );
 
-export const Hero: React.FC = () => {
+export const Hero = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       <FloatingIcons />
